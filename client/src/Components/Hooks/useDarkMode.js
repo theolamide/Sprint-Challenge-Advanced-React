@@ -1,8 +1,8 @@
-import {useEffect} from 'react';
+import {useState, useEffect} from 'react';
 
 
 export const useDarkMode = (enableDark, initalValue) => {
-    const [enableDarkMode, setEnableDarkMode] =  useLocalStorage(enableDark, initalValue)
+    const [enableDarkMode, setEnableDarkMode] =  useState(enableDark, initalValue)
   
     useEffect (() => {
       var b = document.querySelector('body');
