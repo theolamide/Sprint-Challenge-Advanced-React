@@ -16,15 +16,10 @@ export default class FetchPlayers extends React.Component{
             })
     }
 
-
-
-
-
-
     render(){
         // console.log(this.state)
         return(
-            <div>
+            <>
                 {this.state.players.map(player => (
                     <div key = {player.id} className="PlayerCard">
                         <h2>Name: {player.name}</h2>
@@ -32,7 +27,7 @@ export default class FetchPlayers extends React.Component{
                         <h3>Searches: {player.searches}</h3>
                     </div>
                 ))}
-            </div>
+            </>            
         )
     }
 }
