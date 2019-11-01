@@ -10,7 +10,7 @@ const NavBar = () => {
     };
 
     return(
-        <nav>
+        <nav className = "navbar">
             <h1>
                 Player Cards
             </h1>

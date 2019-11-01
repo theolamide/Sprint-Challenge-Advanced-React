@@ -2,19 +2,29 @@ import React from "react";
 import axios from 'axios';
 
 export default class FetchPlayers extends React.Component{
+    
+    _isMounted = false;
+
     state ={
         players: []
     };
 
     componentDidMount(){
+        this._isMounted = true;
+
         axios.get("http://localhost:5000/api/players")
-            .then(result => {
-                console.log(result)
-                this.setState({
-                    players: result.data
-                });
-            })
-    }
+            .then(result => {                
+                if (this._isMounted){
+                    this.setState({
+                        isLoading: false,
+                        players: result.data })
+                    }
+            })           
+            }
+
+    componentWillUnmount() {
+        this._isMounted = false;
+        }
 
     render(){
         // console.log(this.state)
