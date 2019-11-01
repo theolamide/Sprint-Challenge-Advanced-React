@@ -15,6 +15,7 @@ const NavBar = () => {
                 Player Cards
             </h1>
             <div>
+                <h2>Toggle Mode</h2>
                 <div
                     onClick={toggleMode}
                     className={darkMode? 'toggle toggled' : 'toggle'}
