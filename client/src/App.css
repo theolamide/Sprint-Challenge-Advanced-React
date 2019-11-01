@@ -168,7 +168,7 @@ img {
   border-bottom: 1px solid rgb(221, 221, 221);
   display: flex;
   height: 70px;
-  justify-content: space-between;
+  justify-content: space-around;
   padding: 0 3%;
   width: 100%;
   -webkit-box-shadow: 0px 2px 15px -8px rgba(0, 0, 0, 0.42);
@@ -188,9 +188,10 @@ img {
 .toggle {
   background: #f68819;
   border-radius: 50px;
+  /* border: 1px solid black; */
   height: 18px;
   left: 0;
-  position: absolute;
+  position: relative;
   transition: 0.2s;
   width: 20px;
 }
@@ -212,3 +213,42 @@ img {
   border: none;
 }
 
+.coin__title {
+  display: block;
+  margin-left: 8px;
+  min-width: 160px;
+  text-align: left;
+}
+
+.coin__symbol {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.coin__logo {
+  width: 50px;
+}
+
+.toggleHouse{
+  display: flex;
+  justify-content: space-between;
+  /* border: 1px solid black; */
+  width: 150px
+}
+
+.PlayerCard{
+  /* border: 1px solid red; */
+  text-align: center;
+  padding: 1.5rem 0rem;
+  width: 20rem;
+  height: 7rem;
+  background: #e5ef97;
+  margin: 1rem;
+  border-radius: 1rem;
+}
+
+.PlayerCardContainer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}

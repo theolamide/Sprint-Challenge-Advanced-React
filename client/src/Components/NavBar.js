@@ -14,7 +14,7 @@ const NavBar = () => {
             <h1>
                 Player Cards
             </h1>
-            <div>
+            <div className="toggleHouse">
                 <h2>Toggle Mode</h2>
                 <div
                     onClick={toggleMode}
